@@ -1,3 +1,5 @@
+import React from 'react';
+import {chrono} from 'react-chrono';
 const projects=()=>{
     return (
         <div>

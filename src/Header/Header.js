@@ -22,7 +22,7 @@ return(
         <li><Link to="/contact">Contact</Link></li>
     </ul>
     
-        <Button onClick={()=>changeTheme()}> <ContrastIcon  sx={{margin:"10px"}}/></Button>
+        <Button onClick={()=>changeTheme()} color='error'> <ContrastIcon  sx={{margin:"10px"}}/></Button>
         </div>
        
 </nav>)
