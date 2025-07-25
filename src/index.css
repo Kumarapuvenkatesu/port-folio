@@ -1,10 +1,4 @@
-/* body {
-  margin: 0;
- background-color: #2c483b;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-} */
+
 
 body {
   margin: 0;
@@ -58,7 +52,8 @@ code {
 }
 .list-style li a{
   text-decoration: none;
-  /* color: #fff; */
+  color: #4fff03;
+ 
 }
 .list-style li a:hover{
   color: #61dafb;
@@ -150,6 +145,7 @@ span.hand{
 
 .home-content span {
   display: inline-block;
+  width: max-content;
   font-weight: bold;
   color: transparent;
   -webkit-text-stroke: 0.8px #afdb1e;
@@ -232,7 +228,7 @@ span.hand{
 .para-text{
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #333;
+  color: #04ff2a;
   margin-top: 20px;
   width: 600px;
   text-align: justify;
@@ -254,10 +250,17 @@ span.hand{
   color: #fff;
   margin: 10px;
    object-fit: contain;
+   
 }
 .skills-list li:hover{
   background-color: #495057;
   cursor: pointer;
   transform: scale(1.2);
   transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+span b:hover{
+  transform: (2) ;
+  cursor: pointer;
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
 }

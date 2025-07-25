@@ -22,8 +22,8 @@ const About = () => {
         <div>
             <ul className="list-style">
                 <li><strong>Phone:-</strong><span>+91 <b>7995425957</b></span></li>
-                <li><strong>Address:-</strong><span>vnkt6811@gmail.com</span></li>
-                <li><strong>Email:-</strong><span>Hyderabad</span></li>
+                <li><strong>Address:-</strong><span><b>vnkt6811@gmail.com</b></span></li>
+                <li><strong>Email:-</strong><span><b>Hyderabad</b></span></li>
             </ul>
         </div>
         </div>
