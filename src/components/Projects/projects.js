@@ -30,7 +30,6 @@ const projects=()=>{
     return (
         <div>
           <Helmet>
-
             <title>Projects-route</title>
              <meta name="description" content="Project Route" />
           </Helmet>

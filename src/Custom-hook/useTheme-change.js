@@ -14,7 +14,6 @@ const useThemeChange = (initialValue=false) => {
     }
   }, [value]);
 
-  
     return {value, toggle};
 }
 export default useThemeChange;

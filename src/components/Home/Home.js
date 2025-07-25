@@ -1,13 +1,14 @@
+import React from 'react';
 import { Button } from "@mui/material";
 import {Helmet} from "react-helmet";
 
 const Home=()=>{
 
-     const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/React_3-project_Venkatesu.pdf";
-    link.download = "Kumarapu_Venkatesu_Resume.pdf";
-    link.click();
+    const handleDownload = () => {
+      const link = document.createElement("a");
+      link.href = "/React_3-project_Venkatesu.pdf";
+      link.download = "Kumarapu_Venkatesu_Resume.pdf";
+      link.click();
   };
     return (
 

@@ -12,7 +12,6 @@ const Projects = lazy(() => import('./components/Projects/projects'));
 const Contact = lazy(() => import('./components/Contact/Contact'));
 const NotFound = lazy(() => import('./NotFound/NotFound'));
 
-
 const Layout = () => (
   <>
     <Header />
@@ -24,8 +23,7 @@ const Layout = () => (
 );
 
 function App() {
-  useThemeChange(); // Use custom theme hook
-
+  useThemeChange(); 
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
