@@ -22,8 +22,8 @@ return(
             <li><Link to="/projects" >Projects</Link></li>
             <li><Link to="/contact" >Contact</Link></li>
         </ul>
-            <Button onClick={toggle} color='error'> 
-                <ContrastIcon  sx={{margin:"10px"}}/>
+            <Button onClick={toggle} color='error' disableRipple> 
+                <ContrastIcon  sx={{margin:"10px"}} />
             </Button>
     </div>
        

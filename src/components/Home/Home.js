@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import {Helmet} from "react-helmet";
 
 const Home=()=>{
 
@@ -11,6 +12,10 @@ const Home=()=>{
     return (
 
          <div className="home-container">
+          <Helmet>
+            <title>Home-portfolio</title>
+            <meta name="description" content="Home-route" />
+          </Helmet>
       <div className="home-content">
         <h3>
           Hi <span role="img" aria-label="wave" className="hand">&#128075;</span>

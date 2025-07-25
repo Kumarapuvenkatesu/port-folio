@@ -1,12 +1,13 @@
 import React,{useState} from "react";
 import { Box, Container, TextField, Typography, Button } from "@mui/material";
-import "../../index.css"
+import "../../index.css";
+import { Helmet } from "react-helmet";
 
 
 
 
 
-export default function Login() {
+export default function Contact() {
     const [email,setEmail]=useState({username:"",email:"",text:""})
 
     const handleChange=(e)=>{
@@ -25,6 +26,10 @@ export default function Login() {
             
            
             <Container component="main" maxWidth="xs" sx={{marginTop:"5rem"}} >
+                <Helmet>
+                    <title>Contact-portfolio</title>
+                     <meta name="description" content="Contact Route" />
+                </Helmet>
                 <Box
                     sx={{
                         display: 'flex',

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Chrono } from 'react-chrono';
+import {Helmet} from "react-helmet";
 const projects=()=>{
     const items=[{
           title: "Apr-2022 to Jun-2023",
@@ -28,6 +29,11 @@ const projects=()=>{
       ]
     return (
         <div>
+          <Helmet>
+
+            <title>Projects-route</title>
+             <meta name="description" content="Project Route" />
+          </Helmet>
             <h1>My Projects</h1>
             <p>Here you can find a list of my projects and their descriptions.</p>
             <Chrono items={items}   mode="VERTICAL"/>

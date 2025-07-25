@@ -1,41 +1,43 @@
-import React from 'react';
-import {  Routes, Route } from 'react-router-dom';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Projects from './components/Projects/projects';
-import Contact from './components/Contact/Contact';
-import NotFound from './NotFound/NotFound';
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
-import useThemeChange from './Custom-hook/useTheme-change'; // Import Footer component
+import React, { lazy, Suspense } from 'react';
+import { Routes, Route, Outlet } from 'react-router-dom';
 
-import { Outlet } from 'react-router-dom'; // Import Outlet for nested routes
-import './App.css';
+import useThemeChange from './Custom-hook/useTheme-change'; 
+import Header from './Header/Header'; 
+import Footer from './Footer/Footer';
+import './App.css'; 
+// Lazy-loaded pages
+const Home = lazy(() => import('./components/Home/Home'));
+const About = lazy(() => import('./components/About/About'));
+const Projects = lazy(() => import('./components/Projects/projects'));
+const Contact = lazy(() => import('./components/Contact/Contact'));
+const NotFound = lazy(() => import('./NotFound/NotFound'));
+
 
 const Layout = () => (
   <>
     <Header />
-    <Outlet /> 
-    <Footer/>{/* This renders the matched child route */}
+    <main>
+      <Outlet />
+    </main>
+    <Footer />
   </>
 );
 
 function App() {
-  const { value } = useThemeChange(); 
+  useThemeChange(); // Use custom theme hook
+
   return (
-  
-  <Routes>
-   
-    <Route path="/" element={<Layout />}>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
         </Route>
         <Route path="*" element={<NotFound />} />
-  </Routes>
- 
-
+      </Routes>
+    </Suspense>
   );
 }
 
