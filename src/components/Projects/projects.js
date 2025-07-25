@@ -30,12 +30,14 @@ const projects=()=>{
     return (
         <div>
           <Helmet>
-            <title>Projects-route</title>
+            <title>
+              Projects-route
+            </title>
              <meta name="description" content="Project Route" />
           </Helmet>
             <h1>My Projects</h1>
             <p>Here you can find a list of my projects and their descriptions.</p>
-            <Chrono items={items}   mode="VERTICAL"/>
+            <Chrono items={items}   mode="VERTICAL_ALTERNATING" />
         </div>
     );
 }
