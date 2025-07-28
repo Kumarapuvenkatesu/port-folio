@@ -26,7 +26,7 @@ export default function Contact() {
   };
 
   return (
-    <Container component="div" maxWidth="xs">
+    <Container component="div" maxWidth="xs" className="contact-container" >
       <Helmet>
         <title>Contact-portfolio</title>
         <meta name="description" content="Contact Route" />

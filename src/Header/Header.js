@@ -9,9 +9,9 @@ const Header =()=>{
 const {value, toggle} = useThemeChange();
     
 return(
-<nav className={value ? ' dark' : 'header'}>
+<nav className={`header ${value ? ' dark' : 'light'}`}>
     <div >
-        <h1>
+        <h1 className={value ? 'text-white' : ''}>
             Portfolio
         </h1>
     </div>

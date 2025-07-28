@@ -15,7 +15,7 @@ const NotFound = lazy(() => import('./NotFound/NotFound'));
 const Layout = () => (
   <>
     <Header />
-    <main>
+    <main className='main-content'>
       <Outlet />
     </main>
     <Footer />

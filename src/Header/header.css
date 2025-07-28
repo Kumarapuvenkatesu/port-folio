@@ -1,6 +1,21 @@
 .dark{
     background-color: #333 !important;
+    transition: 2s;
+}
+.text-white{
     color: white;
     transition: 2s;
 }
+.light{
+    color: black;
+    transition: 2s;
+}
 
+.header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 60px;
+    z-index: 4;
+}
