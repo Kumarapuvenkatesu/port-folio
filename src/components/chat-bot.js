@@ -87,7 +87,7 @@ function ChatBot() {
 const styles = {
   floatingButton: {
     position: 'fixed',
-    bottom: 20,
+    bottom: 90,
     right: 20,
     background: '#000',
     color: '#fff',
@@ -105,7 +105,7 @@ const styles = {
 
   chatWindow: {
     position: 'fixed',
-    bottom: 90,
+    bottom: 150,
     right: 20,
     width: 320,
     height: 420,
@@ -114,6 +114,7 @@ const styles = {
     boxShadow: '0 7px 10px rgba(0,0,0,0.3)',
     display: 'flex',
     flexDirection: 'column',
+    zIndex:1000,
   },
 
   header: {
