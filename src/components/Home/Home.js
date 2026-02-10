@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from "@mui/material";
 import {Helmet} from "react-helmet";
+import ChatBot from "../chat-bot";
 
 const Home=()=>{
 
@@ -18,6 +19,7 @@ const Home=()=>{
             <meta name="description" content="Home-route" />
           </Helmet>
       <div className="home-content">
+          <ChatBot/>
         <h3>
           Hi <span role="img" aria-label="wave" className="hand">&#128075;</span>
         </h3>
